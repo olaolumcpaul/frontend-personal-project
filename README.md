@@ -70,7 +70,44 @@ so keep your goals realistic!
 ## Demo Outline
 
 - Your demo should only last 5 mins maximum
+- You can run the demo from a locally running version of your app (i.e. on `localhost`) or from the deployed site
+  _(deployment is optional)_
 - You will need to show how your site / app works from the perspective of a user
 - Make sure you have mock data setup for the demo
 - We highly recommend you do NOT make any changes on the day of the demo, because last minute bugs/breakages are 
   very stressful to fix!
+
+## Deployment
+
+There are various approaches, and it depends on what sort of site/application you have built. The best options are:
+- GitHub pages for a static website (no React)
+- Netlify for a React app
+
+### Static Website
+The simplest solution is to host it on [GitHub Pages](https://pages.github.com/). This is nice and simple, and will allow you 
+to link your GitHub repos to GitHub pages, which will then host the site/project for you.
+
+### React Single Page App (SPA)
+If you have a React app with no routing, then there are two options: You can either:
+  1. Use GitHub Pages as above, but you will also need to include the `gh-pages` package. Follow the instructions
+     provided [here](https://blog.logrocket.com/deploying-react-apps-github-pages/) but bear in mind the following:
+     - Where they use `create-react-app` (CRA), you should use `vite` (CRA is an obsolete React project initialiser)
+     - You should check out additional setup instructions for `vite`
+       [here](https://vitejs.dev/guide/static-deploy.html#github-pages)
+  2. Use Netlify, as per the instructions below for "React with Routing".
+
+### React with Routing
+If you have routing, then this is the best approach. It is also a good option if you have a React SPA with no routing. 
+It requires a bit of setup so follow the guides carefully!
+  - [Netlify web instructions](https://docs.netlify.com/site-deploys/create-deploys/)
+    - These are the official Netlify instructions on how to use their web interface to link your GitHub repo to their platform
+      so that you can create a "Continuous Deployment" - meaning the deployed website will automatically update to match what
+      is contained in your repo!
+  - [Netlify CLI instructions](https://docs.netlify.com/integrations/frameworks/vite/#deploy-your-vite-project-with-netlify-cli)
+    - These are the official Netlify instructions for deploying a React app built using `vite`.
+    - It involves installing their Command Line Interface (CLI), which is a programme that you run from your 
+      terminal / GitBash.
+    - This is an alternative approach to using the web deployment approach above. Use one approach or the other - NOT BOTH!
+
+  > If you use Netlify for a React app and the deployed site does not work, then be sure to check the steps for adding a `_redirects`
+  > file to enable both React SPA and React with Routing apps to work properly. This used to always be needed but may be addressed now.

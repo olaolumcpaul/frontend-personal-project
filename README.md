@@ -5,20 +5,21 @@ The Task Management App is designed to help users efficiently create, organize, 
 1. Planning & Inspiration
 
 For inspiration, I looked at several existing task management apps, such as Todoist and Microsoft To-Do, which prioritize clean UI and ease of use. I sketched a few wireframes on paper to visualize the layout, including how task lists would appear on both desktop and mobile screens. I also drew flow diagrams to outline user interactions, such as adding, editing, and completing tasks.
+
 Useful References:
 
-	•	Todoist
-	•	Microsoft To-Do
-	•	Simple wireframes and flow diagrams were created to guide the UI layout and user flows.
+    •	Todoist
+    •	Microsoft To-Do
+    •	Simple wireframes and flow diagrams were created to guide the UI layout and user flows.
 
 2. Tech Stack
 
-	•	HTML: Structure of the app.
-	•	CSS (with Flexbox/GRID): Responsive layout and styling.
-	•	JavaScript: Used for interactivity (adding/editing/deleting tasks, toggling task completion).
-	•	React: The core framework for building the UI components and handling state management.
-	•	React Hooks: For managing local state in functional components (e.g., useState, useEffect).
-	•	LocalStorage: Used to persist user data (tasks) even after page reload.
+   • HTML: Structure of the app.
+   • CSS (with Flexbox/GRID): Responsive layout and styling.
+   • JavaScript: Used for interactivity (adding/editing/deleting tasks, toggling task completion).
+   • React: The core framework for building the UI components and handling state management.
+   • React Hooks: For managing local state in functional components (e.g., useState, useEffect).
+   • LocalStorage: Used to persist user data (tasks) even after page reload.
 
 3. Why This Stack?
 
@@ -31,3 +32,36 @@ I enjoyed building dynamic user interfaces with React, especially using Hooks fo
 5. What I Found Challenging
 
 One challenge was implementing the LocalStorage feature, ensuring tasks persist after page reload while syncing them with React’s state. Another tricky part was designing a clean yet functional interface that adapts to various screen sizes, as responsiveness required careful thought with CSS Flexbox and Grid.
+
+6. Link to Netlify App - https://67117189cfdb12c2f4749afe--radiant-sfogliatella-2ca49d.netlify.app/
+
+7. Key Features
+
+    1.	Task Creation and Management:
+	•	Add new tasks with descriptions, priorities, categories, and due dates.
+	•	Edit, update, or delete tasks.
+	•	Mark tasks as complete or incomplete.
+	2.	Priority-Based Task Sorting:
+	•	Sort tasks by priority levels: High, Medium, and Low.
+	•	Apply color gradients to visually distinguish task priorities.
+	3.	Task Filtering and Search:
+	•	Filter tasks by text, priority, category, or due date.
+	•	Search bar allows dynamic search across multiple fields, including newly added categories.
+	4.	Category Management:
+	•	Predefined categories (e.g., Personal, Work).
+	•	Option to create custom categories on-the-fly and assign tasks to them.
+	5.	Due Date Sorting:
+	•	Automatically sort tasks by due date, with nearest tasks at the top and undated tasks at the bottom.
+	6.	Responsive Design:
+	•	Mobile and desktop-friendly layout.
+	•	Tasks and features adapt seamlessly to different screen sizes.
+	7.	Visual Indicators:
+	•	Bold task names for better readability.
+	•	Task labels (priority, category, due date) displayed with consistent styling.
+	8.	Completion Tracking:
+	•	Visual representation of completed tasks (e.g., strikethroughs and checkboxes).
+	9.	User-Friendly Interface:
+	•	Simple navigation with clear buttons for adding, editing, and deleting tasks.
+	•	Clean UI inspired by popular task management tools.
+	10.	Local Storage Integration:
+	•	Tasks saved locally in the browser to persist across sessions without needing a server.

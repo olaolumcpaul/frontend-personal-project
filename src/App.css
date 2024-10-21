@@ -33,6 +33,55 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
+/* Responsive styling */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Add padding on mobile for better spacing */
+  }
+
+  .app {
+    height: auto;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: auto;
+  }
+
+  /* Reduce padding for mobile view */
+  .task-item {
+    padding: 0.75rem;
+  }
+
+  .task-input {
+    flex-direction: column; /* Stack input fields on mobile */
+    gap: 8px; /* Reduce gap between inputs */
+  }
+
+  .task-input input,
+  .task-input select,
+  .task-input input[type="date"] {
+    font-size: 0.9rem; /* Smaller font size on mobile */
+    padding: 0.5rem;
+  }
+
+  .task-list-section {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller font size for the header on mobile */
+  }
+
+  .header .search-bar {
+    width: 100%; /* Make search bar full width on mobile */
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem; /* Larger button text for touch input */
+    padding: 0.75rem 1rem;
+  }
+}
+
 /* Header Styling */
 .header {
   text-align: center;
@@ -51,7 +100,7 @@ h1 {
   margin: 0 auto;
   width: 300px;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;

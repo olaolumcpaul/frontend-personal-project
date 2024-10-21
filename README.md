@@ -21,20 +21,6 @@ Useful References:
    • React Hooks: For managing local state in functional components (e.g., useState, useEffect).
    • LocalStorage: Used to persist user data (tasks) even after page reload.
 
-3. Why This Stack?
-
-I chose React for its component-based architecture, which allows the app to be scalable and modular. The use of React Hooks simplifies state management without needing complex tools like Redux. For persistence, LocalStorage was ideal as it keeps user data on the client side without needing a backend. HTML and CSS were natural choices for structuring and styling the app, while JavaScript enhances interactivity.
-
-4. What I Enjoyed
-
-I enjoyed building dynamic user interfaces with React, especially using Hooks for state management. It was rewarding to see how components re-render based on state changes, making the app feel responsive and real-time. I also enjoyed the CSS aspect, where I could experiment with responsive design, ensuring the app worked smoothly on mobile and desktop.
-
-5. What I Found Challenging
-
-One challenge was implementing the LocalStorage feature, ensuring tasks persist after page reload while syncing them with React’s state. Another tricky part was designing a clean yet functional interface that adapts to various screen sizes, as responsiveness required careful thought with CSS Flexbox and Grid.
-
-6. Link to Netlify App - https://67117189cfdb12c2f4749afe--radiant-sfogliatella-2ca49d.netlify.app/
-
 7. Key Features
 
     1.	Task Creation and Management:
@@ -65,3 +51,18 @@ One challenge was implementing the LocalStorage feature, ensuring tasks persist 
 	•	Clean UI inspired by popular task management tools.
 	10.	Local Storage Integration:
 	•	Tasks saved locally in the browser to persist across sessions without needing a server.
+
+3. Why This Stack?
+
+I chose React for its component-based architecture, which allows the app to be scalable and modular. The use of React Hooks simplifies state management without needing complex tools like Redux. For persistence, LocalStorage was ideal as it keeps user data on the client side without needing a backend. HTML and CSS were natural choices for structuring and styling the app, while JavaScript enhances interactivity.
+
+4. What I Enjoyed
+
+I enjoyed building dynamic user interfaces with React, especially using Hooks for state management. It was rewarding to see how components re-render based on state changes, making the app feel responsive and real-time. I also enjoyed the CSS aspect, where I could experiment with responsive design, ensuring the app worked smoothly on mobile and desktop.
+
+5. What I Found Challenging
+
+One challenge was implementing the LocalStorage feature, ensuring tasks persist after page reload while syncing them with React’s state. Another tricky part was designing a clean yet functional interface that adapts to various screen sizes, as responsiveness required careful thought with CSS Flexbox and Grid.
+
+6. Link to Netlify App - https://67117189cfdb12c2f4749afe--radiant-sfogliatella-2ca49d.netlify.app/
+
